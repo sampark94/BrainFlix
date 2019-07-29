@@ -32,8 +32,9 @@ nav{
         width: 90%;
         margin-top: 10px;
         border-radius: 5px;
-        border: 1px solid grey;
+        border: 1px solid #e1e1e1;
         font-size: 20px;
+        font-family: AvenirRegular;
         padding-left: 45px;
         &--icon{
             position: absolute;
@@ -46,6 +47,8 @@ nav{
         height:50px;
         width: 74%;
         max-width: 100%;
+        font-family: AvenirRegular;
+        background-color: #0095FF;
         color: white;
         border-radius: 7px;
         display: flex;
@@ -53,6 +56,9 @@ nav{
         justify-content: center;
         align-items: center;
     }
+    &__button:hover{
+            background-color: #0065AD;
+        }
 }
 
 // Tablet
@@ -64,7 +70,6 @@ nav{
     margin-left: 2rem;
     margin-right: 2rem;
     height: 80px;
-    padding-bottom: 16px;
     &__container--1{
         width: 17%;
         justify-content: flex-start;

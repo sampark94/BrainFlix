@@ -10,31 +10,31 @@ function Navbar() {
         <div>
             <header>
                 <nav>
-                    <div class="navbar">
-                        <div class="navbar__container--1">
+                    <div className="navbar">
+                        <div className="navbar__container--1">
                             <a href="index.html">
                                 <img
                                     src={Icon}
-                                    class="navbar__logo"
+                                    className="navbar__logo"
                                     alt=""
                                 />
                             </a>
                         </div>
-                        <div class="navbar__container--2">
+                        <div className="navbar__container--2">
                             <input
-                                class="navbar__search"
+                                className="navbar__search"
                                 type="text"
                                 id="search"
                                 name="search"
                                 placeholder="Search"
                             />
                             <div>
-                                <img class="navbar__search--icon" src={Search} alt="" />
+                                <img className="navbar__search--icon" src={Search} alt="" />
                             </div>
-                            <button class="navbar__button">+ UPLOAD</button>
+                            <button className="navbar__button">+ UPLOAD</button>
                             <img
                                 src={NavPic}
-                                class="navbar__picture"
+                                className="navbar__picture"
                                 alt=""
                             />
                         </div>

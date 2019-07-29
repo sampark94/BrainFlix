@@ -1,5 +1,20 @@
 *{
     margin: 0;
 }
+@font-face{
+    font-family: "AvenirRegular";
+    src: url(../Assets/fonts/avenirregular.otf)
+}
+@font-face{
+    font-family: "AvenirDemi";
+    src: url(../Assets/fonts/avenirdemi.otf)
+}
+@font-face{
+    font-family: "AvenirBold";
+    src: url(../Assets/fonts/avenirbold.otf)
+}
+// @import "./partials/fonts";
 @import "./partials/navbar";
 @import "./partials/hero";
+@import "./partials/comments";
+@import "./partials/video";

@@ -17,6 +17,36 @@
     h2 {
       margin-top: 0px;
       margin-bottom: 16px;
+      line-height: 32px;
+      font-family: AvenirBold;
+      font-size: 24px;
+    }
+  }
+  &__uploader{
+    font-family: AvenirDemi;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__date{
+    font-family: AvenirRegular;
+    font-size: 13px;
+    line-height: 18px;
+    color: silver;
+  }
+  &__views{
+    font-family: AvenirRegular;
+    font-size: 13px;
+    line-height: 18px;
+    img{
+      margin-right: 8px;
+    }
+  }
+  &__likes{
+    font-family: AvenirRegular;
+    font-size: 13px;
+    line-height: 18px;
+    img{
+      margin-right: 8px;
     }
   }
   &__stats {
@@ -58,9 +88,56 @@
     }
   }
   &__text {
-
     width: 100%;
     margin-top: 24px;
     margin-bottom: 40px;
+    font-family: AvenirRegular;
+    font-size: 13px;
+    line-height: 18px;
   }
+}
+
+// Tablet
+@media screen and (min-width: 768px){
+.video-section{
+  &__video{
+    width: 91.145%;
+    margin-left: 4.427%;
+    margin-right: 4.427%;
+    margin-bottom:48px;
+  }
+  &__description{
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  &__stats{
+    display:flex;
+    flex-direction: row;
+    &--1, &--2{
+      width: 50%;
+      margin-bottom: 0;
+      ul li{
+        width: auto;
+      }
+    }
+    &--2 ul{
+      width: 100%;
+      justify-content: flex-end;
+      li img{
+        margin-right: 8px;
+      }
+    }
+  }
+  &__views{
+    margin-right: 24px;
+  }
+  &__uploader{
+    margin-right: 10px;
+  }
+  &__text{
+    width: 73.9%;
+    margin-top: 40px;
+    margin-bottom: 64px;
+  } 
+}
 }
