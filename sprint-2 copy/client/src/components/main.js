@@ -21,21 +21,6 @@ class Main extends React.Component {
         heroVideo: {}
     }
 
-    componentDidUpdate() {
-        const { match } = this.props;
-        const videoId = match.params.id;
-
-        let video = {};
-
-        axios.get('https://project-2-api.herokuapp.com/videos/' + videoId + '?api_key=' + this.apiKey)
-            .then(response => {
-                video = response.data;
-
-                this.setState({
-                    heroVideo: video
-                });
-            })
-    }
     componentDidMount() {
 
 
@@ -61,6 +46,21 @@ class Main extends React.Component {
 
             })
 
+    }
+    componentDidUpdate() {
+        const { match } = this.props;
+        const videoId = match.params.id;
+
+        let video = {};
+
+        axios.get('https://project-2-api.herokuapp.com/videos/' + videoId + '?api_key=' + this.apiKey)
+            .then(response => {
+                video = response.data;
+
+                this.setState({
+                    heroVideo: video
+                });
+            })
     }
 
     render() {

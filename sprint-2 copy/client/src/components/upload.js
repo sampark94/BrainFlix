@@ -20,7 +20,7 @@ class NewPhoto extends React.Component {
                 <div className='upload'>
                     <h1>Upload Video</h1>
                     <div className='upload__content'>
-                        <div>
+                        <div className='upload__video'>
                             <label>VIDEO THUMBNAIL</label>
                             <img src={Thumbnail} alt='' />
                         </div>

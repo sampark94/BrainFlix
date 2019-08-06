@@ -36,6 +36,7 @@ nav{
         font-size: 20px;
         font-family: AvenirRegular;
         padding-left: 45px;
+        background-color: #fafafa;
         &--icon{
             position: absolute;
             top: 75px;
@@ -50,11 +51,17 @@ nav{
         font-family: AvenirRegular;
         background-color: #0095FF;
         color: white;
-        border-radius: 7px;
+        border-radius: 4px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        a{
+            text-decoration: none;
+            font-family: AvenirRegular;
+            color: white;
+            font-size: 14px;
+        }
     }
     &__button:hover{
             background-color: #0065AD;
@@ -94,7 +101,7 @@ nav{
     }
     &__picture{
         height: 50px;
-        width: 18%;
+        width: 14%;
         margin-left:24px;
     }
 }
@@ -115,7 +122,7 @@ nav{
         justify-content: flex-end;
     }
     &__search--icon{
-        left: 820px;
+        left: 825px;
     }
 }
 }

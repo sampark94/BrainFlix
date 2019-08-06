@@ -8,7 +8,7 @@ class VideoSection extends React.Component {
             <>
                 <div className="video-section">
                     <div className="video-section__video">
-                        <video width='100%' controls poster="{HeroImage}.image" className='hero__image'>
+                        <video width='100%' controls poster={HeroImage.image} className='hero__image'>
                         </video>
                     </div>
                 </div>
