@@ -3,6 +3,14 @@ import Logo1 from '../Assets/Images/Mohan-muruge.jpg';
 import Logo2 from '../Assets/Images/Mohan-muruge.jpg';
 
 class Comments extends React.Component {
+    convertToDate(timestamp) {
+        const date = new Date(timestamp)
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const dateTime = month + "/" + day + "/" + year;
+        return dateTime;
+    }
     render() {
         return (
             <div className='comments'>

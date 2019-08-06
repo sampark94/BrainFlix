@@ -1,0 +1,100 @@
+.video{
+    margin-left:5%;
+    margin-right: 5%;
+    &__maintitle{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        color: silver;
+        font-family: AvenirDemi;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 24px;
+        li{
+            list-style-type: none;
+
+        }
+    }
+    &__list{
+        padding-left: 0;
+        a{
+        text-decoration: none;
+          color: black;
+        }
+    }
+    &__image{
+        margin-right: 8px;
+        img{
+        width: 120px;
+        height: 70px;
+        border-radius: 10px;
+        }
+    }
+    &__title{
+        font-family: AvenirDemi;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__author{
+        font-family: AvenirRegular;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+// Tablet
+@media screen and (min-width: 768px){
+    .video{
+        margin-left: 3.125%;
+        margin-right: 3.125%;
+        &__container{
+            max-width: 45.3125%;
+        }
+    }
+}
+// Desktop
+@media screen and (min-width: 1440px){
+    .video-section{
+        margin-bottom: 40px;
+        &__video{
+        height: 540px;
+        video{
+            height: 540px;
+        }}
+        &__description{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__stats{
+            padding-right: 32px;
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        &__comments{
+            width: 85%;
+            // padding-right: 32px;
+            border-right: 2px solid rgba(128, 128, 128, 0.3);
+        }
+    }
+    .comments{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;  
+        &__user__new--info{
+            width: 100%;
+        }
+        &__user__new--input{
+            width: 100%;
+        }
+    }
+    .video__container{
+        max-width: 85%;
+    }
+}

@@ -2,10 +2,13 @@ import React from 'react'
 import Navbar from './navbar'
 import VideoSection from './hero'
 import Comments from './comments'
+import VideoSectionDescription from "./herodescription"
+// import axios from 'axios'
+// import Upload from "./upload"
+// import { Route, Switch } from 'react-router-dom';
 
 
 import '../styles/main.css'
-
 import thumbnail1 from '../Assets/Images/video-list-1.jpg'
 import thumbnail2 from '../Assets/Images/video-list-2.jpg'
 import thumbnail3 from '../Assets/Images/video-list-3.jpg'
@@ -15,8 +18,9 @@ import thumbnail6 from '../Assets/Images/video-list-6.jpg'
 import thumbnail7 from '../Assets/Images/video-list-7.jpg'
 import thumbnail8 from '../Assets/Images/video-list-8.jpg'
 
-class App extends React.Component {
 
+
+class App extends React.Component {
     state = {
         videos: [
 
@@ -82,8 +86,18 @@ class App extends React.Component {
             <div>
                 <nav><Navbar /></nav>
                 <VideoSection />
-                <Comments />
-                <VideoList videos={this.state.videos} />
+                <div className="container">
+                    <div className="container__comments">
+                        <VideoSectionDescription />
+                        <Comments />
+                    </div>
+                    <VideoList videos={this.state.videos} />
+                </div>
+
+                {/* <Switch>
+                    <Route path="/" exact component={App} />
+                    <Route path="/upload" component={Upload} />
+                </Switch> */}
             </div>
         )
     }
