@@ -1,0 +1,173 @@
+.comments{
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  &__header{
+    margin-bottom: 32px;
+    font-family: AvenirDemi;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__user{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    margin-right:0;
+
+  &__new{
+    display: flex;
+    flex-wrap: row wrap;
+
+    &--logo{
+    width: 15%;
+    margin: 0 0 0 10px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 0;
+    }
+   
+    &--label{
+      font-family: AvenirDemi;
+    font-size: 14px;
+    line-height: 22px;
+      color: #afafaf;
+      margin-bottom: 5px;
+      margin-left: 20px;
+    }
+    &--info{
+      display: flex;
+      flex-flow:column wrap;
+      width: 76%;
+    }
+
+    &--input{
+        border-radius: 5px;
+        border: 2px solid #e1e1e1;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 20px;
+        height: 110px;
+        width: 100%;
+        font-family: AvenirRegular;
+        &::placeholder{
+            color: black;
+      }
+    }
+    &--button{
+    border: 2px solid E1E1E1;
+    border-radius: 5px;
+    background-color: #0095FF;
+    width: 103%;
+    height: 40px;
+    font-family: AvenirDemi;
+    color: white;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-bottom: 24px;
+    }
+    &--button:hover{
+      background-color: #0065AD;
+    }
+  } 
+  }
+  &__old{ 
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 3%;
+
+    div{
+      display:flex;
+    }
+
+    p{
+      display: flex;
+      flex-direction: row wrap;
+    }
+    &--block{
+        border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+        padding-top: 3%;
+    }
+    &--logo{
+      width: 15%;
+    margin: 0 0 0 10px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 0;
+    }
+    &__profile{
+      flex-flow: column wrap;
+      padding-left: 3%;
+      &--nd{
+          justify-content: space-between;
+          margin-bottom: 8px;
+      }
+      
+      &--name{
+        font-family: AvenirDemi;
+        font-size: 14px;
+        line-height: 22px;
+        
+      }
+    &--date{
+        color: grey;
+        font-size: 13px;
+        line-height: 18px;
+        font-family: AvenirRegular;
+    }
+
+    &--comment{
+      font-size: 13px;
+        line-height: 18px;
+        font-family: AvenirRegular;
+      padding-bottom: 3%;
+    }
+    }
+}
+}
+// Tablet
+@media screen and (min-width: 768px){
+    .comments{
+        margin-left: 24px;
+        margin-right: 24px;
+        &__user__new{
+            &--logo{
+                width: 5%;
+                margin-top: 25px;
+            }
+            &--inputbutton{
+                display: flex;
+                flex-direction: row;
+            }
+            &--info{
+                width: 100%;
+            }
+            &--input{
+                margin-top: 0;
+                height: 38px;
+                width: 440px;
+            }
+            &--button{
+                margin-right: 40px;
+                margin-left: 16px;
+                width: 160px;
+            }
+    }
+    &__old{
+        margin-top: 0;
+        &--logo{
+            width: 5%;
+        }
+        &__profile{
+            &--nd{
+            justify-content: flex-start;
+            }
+            &--comment{
+                max-width: 98.127%;
+            }
+        }
+    }
+    }
+}

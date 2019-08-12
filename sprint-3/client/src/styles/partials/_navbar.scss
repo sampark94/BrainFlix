@@ -1,0 +1,128 @@
+
+// Mobile Version
+nav{
+    max-height: 169px;
+}
+.navbar{
+    margin: 0 16px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-height: 169px;
+    &__container--1,&__container--2 {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    &__logo{
+        margin: 12px 0;
+    }
+    &__picture{
+        margin-top: 8px;
+        margin-left: 16px;
+        height: 50px;
+        width: 20%;
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    &__search{
+        height: 40px;
+        width: 90%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+        font-size: 20px;
+        font-family: AvenirRegular;
+        padding-left: 45px;
+        background-color: #fafafa;
+        &--icon{
+            position: absolute;
+            top: 75px;
+            left:30px;
+        }
+    }
+    &__button{
+        margin-top: 8px;
+        height:50px;
+        width: 74%;
+        max-width: 100%;
+        font-family: AvenirRegular;
+        background-color: #0095FF;
+        color: white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        a{
+            text-decoration: none;
+            font-family: AvenirRegular;
+            color: white;
+            font-size: 14px;
+        }
+    }
+    &__button:hover{
+            background-color: #0065AD;
+        }
+}
+
+// Tablet
+@media screen and (min-width: 768px){
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 80px;
+    &__container--1{
+        width: 17%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 169px; 
+    }
+    &__container--2{
+        width: 58.9%;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &__search{
+        height: 50px;
+        &--icon{
+            left: 335px;
+            top: 35px;
+        }
+    }
+    &__button{
+        height: 50px;
+        margin-left: 24px;
+    }
+    &__picture{
+        height: 50px;
+        width: 14%;
+        margin-left:24px;
+    }
+}
+}
+
+
+// Desktop
+@media screen and (min-width: 1440px){
+.navbar{
+    margin-left:12.5%;
+    margin-right:12.5%;
+    &__container--1{
+        padding-right: 509px; 
+        width: 120px;
+    }
+    &__container--2{
+        width: 41.7%;
+        justify-content: flex-end;
+    }
+    &__search--icon{
+        left: 825px;
+    }
+}
+}
